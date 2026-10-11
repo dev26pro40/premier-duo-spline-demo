@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Premier Duo — Permanent Exterior Lighting</title>
+<meta name="description" content="Permanent exterior LED lighting. Set it once, change colors from your phone.">
+<style>
+  :root{
+    --bg:#070b16; --bg2:#0b1226; --ink:#f2f5fb; --muted:#9aa7c4;
+    --accent:#4da3ff; --accent2:#8fd0ff; --card:#0e1528; --line:#1b2540;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.5;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+  header{padding:18px 0;border-bottom:1px solid var(--line)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between}
+  .brand{font-weight:800;letter-spacing:.12em;font-size:15px}
+  .brand span{color:var(--accent)}
+  .phone{color:var(--ink);text-decoration:none;font-weight:700;font-size:15px}
+  .hero{padding:44px 0 30px;display:grid;gap:28px}
+  .kicker{color:var(--accent2);font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px}
+  h1{font-size:clamp(34px,7vw,58px);line-height:1.08;letter-spacing:-0.01em;margin-bottom:14px}
+  h1 .blue{color:var(--accent)}
+  .sub{color:var(--muted);font-size:clamp(16px,3.6vw,19px);max-width:34em;margin-bottom:24px}
+  .ctas{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:14px 26px;border-radius:12px;font-weight:700;font-size:16px;
+    text-decoration:none;border:1px solid transparent}
+  .btn.primary{background:var(--accent);color:#06121f}
+  .btn.ghost{border-color:var(--line);color:var(--ink);background:var(--card)}
+  .scene-card{background:var(--card);border:1px solid var(--line);border-radius:20px;
+    overflow:hidden;position:relative}
+  .scene-card iframe{display:block;width:100%;height:min(78vw,480px);border:0;background:#0d1526}
+  .scene-tag{position:absolute;left:14px;bottom:12px;font-size:12px;color:var(--muted);
+    background:rgba(7,11,22,.72);padding:6px 12px;border-radius:999px;border:1px solid var(--line);
+    pointer-events:none}
+  .points{display:grid;gap:14px;padding:26px 0 8px}
+  .point{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+  .point h3{font-size:16px;margin-bottom:6px}
+  .point p{color:var(--muted);font-size:14px}
+  footer{border-top:1px solid var(--line);margin-top:34px;padding:22px 0 40px;color:var(--muted);font-size:13px}
+  @media(min-width:900px){
+    .hero{grid-template-columns:1fr 1.1fr;align-items:center;padding:70px 0 40px}
+    .scene-card iframe{height:520px}
+    .points{grid-template-columns:repeat(3,1fr)}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">PREMIER <span>DUO</span></div>
+    <a class="phone" href="tel:+13095550134">(309) 555-0134</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <div class="kicker">Permanent exterior lighting</div>
+      <h1>Your house, <span class="blue">lit</span> all year.</h1>
+      <p class="sub">Permanent LED lighting installed once. Change colors from your phone for holidays, game days, or every day.</p>
+      <div class="ctas">
+        <a class="btn primary" href="#quote">Get a quote</a>
+        <a class="btn ghost" href="#how">How it works</a>
+      </div>
+    </div>
+    <div class="scene-card">
+      <iframe src="https://my.spline.design/3dtextbluecopycopy-OEsQtWPULf5AMDcuubTWON1K/"
+              title="Premier Duo 3D scene" loading="lazy"
+              allow="autoplay; fullscreen; xr-spatial-tracking"></iframe>
+      <div class="scene-tag">Live 3D: drag to look around</div>
+    </div>
+  </section>
+
+  <section class="points" id="how">
+    <div class="point">
+      <h3>Installed once</h3>
+      <p>Low-profile track blends into your roofline. No ladders, no tangled strands, ever again.</p>
+    </div>
+    <div class="point">
+      <h3>Your phone is the remote</h3>
+      <p>Pick any color or pattern from the app. Holidays, seasons, game days.</p>
+    </div>
+    <div class="point">
+      <h3>Built for weather</h3>
+      <p>Rated for Midwest winters. Stays up through wind, snow, and ice.</p>
+    </div>
+  </section>
+</main>
+
+<footer id="quote">
+  <div class="wrap">
+    Premier Duo — permanent exterior lighting. Demo page.
+  </div>
+</footer>
+</body>
+</html>
